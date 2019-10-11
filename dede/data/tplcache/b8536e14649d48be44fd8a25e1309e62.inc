@@ -1,0 +1,8 @@
+[field:global runphp='yes' name=autoindex]$c
+= '<div class="itemModule moduleVideo">'; if((@me % 1) == 0) @me = $c;
+else @me = '<div class="itemModule moduleImg">';[/field:global]
+                <a href="view.php?aid=[field:id/]">
+                   	[field:image /]
+                    <div class="introduce">[field:title /]</div>
+                </a>
+            </div>

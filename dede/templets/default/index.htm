@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/asset/css/reset.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/asset/css/style.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/asset/lib/swiper/swiper.min.css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<!-- /header -->
+   <div class='zz'></div>
+ <main class="main">
+  <div class="bannerBox">
+      <div id="bannerSwiper" class="swiper-container">
+          <div class="swiper-wrapper">
+          {dede:arclist row=10 orderby=pubdate typeid=6 type='image.' }
+           <div class="swiper-slide">[field:image/]</div>
+          {/dede:arclist}
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+  </div>
+    <!--产品拍摄-->
+    <div class="productModule">
+        <div class="moduleTitle">
+            <img class="titleBackImg" src="{dede:global.cfg_templets_skin/}/asset/images/home/productPhoto.png" alt="">
+           
+        </div>
+        <div class="moduleContent">
+           {dede:arclist row=10 orderby=pubdate flag='c' typeid=2 }
+            <a href='[field:arcurl/]'>
+              <div class="imgModule">
+                [field:image/]            
+              </div>
+            </a>
+            {/dede:arclist}
+        </div>
+    </div>
+<!--            视频拍摄-->
+    <div class="productModule">
+        <div class="moduleTitle">
+            <img class="titleBackImg" src="{dede:global.cfg_templets_skin/}/asset/images/home/videoPhoto.png" alt="">
+            <div class="moreBlock">
+                 {dede:type typeid='2'}       
+              <a href='[field:typelink /]'>
+                <img src="[field:global.cfg_templets_skin/]/asset/images/home/more.png" alt="">
+              </a>
+              {/dede:type}
+            </div>
+        </div>
+        <div class="moduleContent">
+           {dede:arclist row=10 addfields='video' channelid='17' orderby=pubdate typeid=4  imgwidth='390' imgheight='350'}          
+            <div class="imgModule videolist" ipath='[field:video/]' >
+             
+                 [field:image/]
+                 <div class="vtit">[field:title/]</div>
+
+                 <img src="[field:global.cfg_templets_skin/]/images/play.png" class="videoed"/>
+           
+            </div>
+            {/dede:arclist}
+    
+            <div class="vidAlert"></div>
+           
+        </div>
+    </div>
+    <!--详情设计-->
+    <div class="productModule">
+        <div class="moduleTitle">
+            <img class="titleBackImg" src="{dede:global.cfg_templets_skin/}/asset/images/home/detailsPhoto.png" alt="">
+            <div class="moreBlock">
+              {dede:type typeid='4'}       
+              <a href='[field:typelink /]'>
+                <img src="[field:global.cfg_templets_skin/]/asset/images/home/more.png" alt="">
+              </a>
+              {/dede:type}
+            </div>
+        </div>
+        <div class="moduleContent">
+            {dede:arclist row=10 orderby=pubdate flag='c' typeid=1 }
+            <div class="imgModule">
+               <a href='[field:arcurl/]'>
+               [field:image/]    
+               </a>        
+            </div>
+            {/dede:arclist}         
+        </div>
+    </div>
+    <!--亚马逊设计-->
+    <div class="productModule">
+        <div class="moduleTitle">
+            <img class="titleBackImg" src="{dede:global.cfg_templets_skin/}/asset/images/home/maPhoto.png" alt="">
+            <div class="moreBlock">
+                  {dede:type typeid='1'}       
+              <a href='[field:typelink /]'>
+                <img src="[field:global.cfg_templets_skin/]/asset/images/home/more.png" alt="">
+              </a>
+              {/dede:type}
+            </div>
+        </div>
+        <div class="moduleContent">
+            {dede:arclist row=10 orderby=pubdate flag='c' typeid=3 }
+            <div class="imgModule">
+              <a href='[field:arcurl/]'>
+              [field:image/]   
+              </a>          
+            </div>
+            {/dede:arclist}       
+        </div>
+<div class="moreBlock" style='text-align: center;'>
+                  {dede:type typeid='3'}       
+              <a href='[field:typelink /]'>
+                <img src="[field:global.cfg_templets_skin/]/asset/images/home/more.png" alt="">
+              </a>
+              {/dede:type}
+            </div>
+        <div class="pageTop">
+             
+            <img src="{dede:global.cfg_templets_skin/}/asset/images/home/pageTop.png" alt="">
+        </div>
+    </div>
+</main>
+{dede:include filename="footer.htm"/}
+</div>
+
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/asset/lib/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/asset/lib/swiper/swiper.min.js"></script>
+  <script>
+
+     //点击跳转链接，滚动条跳到0的位置，页面移动速度是1000
+     
+      $(function(){
+          //初始化轮播图
+          var bannerSwiper = new Swiper('#bannerSwiper',{
+              loop: true,
+              navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+              },
+              autoplay : 1000,
+          });
+           $(".pageTop").click(function() {
+               $("html,body").animate({scrollTop:0},"fast");
+               console.log(13465);
+                return false; //防止默认事件行为
+           })
+         })
+  </script>
+     <!--关于视频弹出播放js-->
+    <script type="text/javascript" src="[field:global.cfg_templets_skin/]/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $('.videolist').each(function(){ //遍历视频列表
+    $(this).hover(function(){ //鼠标移上来后显示播放按钮
+      $(this).find('.videoed').show();
+    },function(){
+      $(this).find('.videoed').hide();
+    });
+    $(this).click(function(){ //这个视频被点击后执行
+      var img = $(this).attr('vpath');//获取视频预览图
+      var video = $(this).attr('ipath');//获取视频路径
+      $('.vidAlert').html("<video id=\"video\" poster='"+img+"' style='width: 100%;height:100%;' src='"+video+"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"{dede:global.cfg_templets_skin/}/images/gb.png\" width=\"25\" height=\"25\"/>");
+      $('.vidAlert').addClass('cur');
+      $('.zz').addClass('cur');
+    });
+    });
+
+    function close1(){
+    var v = document.getElementById('video');//获取视频节点
+    $('.vidAlert').removeClass('cur');//点击关闭按钮关闭暂停视频
+    $('.zz').removeClass('cur');
+    v.pause();
+    $('.vidAlert').html();
+    }
+    </script>

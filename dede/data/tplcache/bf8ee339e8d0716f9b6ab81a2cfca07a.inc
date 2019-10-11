@@ -1,0 +1,10 @@
+[field:global name=autoindex runphp='yes']
+
+				  (@me!=1)?@me="<div class="itemModule moduleImg">":@me="<div class="itemModule moduleVideo">@me";
+
+			[/field:global]
+                <a href="view.php?aid=[field:id/]">
+                   	[field:image /]
+                    <div class="introduce">[field:title /]</div>
+                </a>
+            </div>

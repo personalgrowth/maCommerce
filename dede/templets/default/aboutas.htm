@@ -1,0 +1,138 @@
+{dede:include filename="head2.htm"/}
+ <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/asset/css/aboutWe.css">
+     <main class="aboutMain">
+            <div class="brand">
+                <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/logo.png" alt="">
+                <h2>设计 · 品牌 · 创意</h2>
+                <p class="">深圳博爱光学科技有限公司创办了博爱影像，拥有五年实体，三年线上经验</p>
+                <p>专注提升和塑造品牌形象,拥有大型摄影棚，可搭建各种场景，八年专业影像设计</p>
+                <p style="margin-bottom: 40px">为千万淘宝卖家提高转化，我们只走心，不走量，为每一个商家用心服务，因为专业，所以自信！</p>
+
+                <p>用户至上，诚实守信，创新理念，合作共赢</p>
+                <p class="last">打造中国电商摄影高影响力品牌,致力于为更多企业服务</p>
+            </div>
+            <div class="moduleTwo">
+                <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/moduleTwo.png" alt="">
+            </div>
+            <div class="moduleThree">
+                <h1>看这里  快速了解</h1>
+                <ul>
+                    {dede:channel type='top' row='4'}
+                      <li>
+                            <a href="[field:typelink /]">
+                                <div></div>
+                                <span>[field:description /]</span>
+                            </a>
+                        </li>
+                    {/dede:channel}
+                </ul>
+            </div>
+            <div class="moduleFour">
+                <div class="titleImg">
+                    <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/redBlock.png" alt="">
+                    <h1>我们为您提供一站式解决方案</h1>
+                </div>
+                <style>
+                    .currentCont li{
+                        cursor:pointer;
+                    }
+                </style>
+                <ul class="currentCont">
+                    {dede:channel type='top' row='4'}
+                        <li data-url='[field:typelink /]'>
+                            <div class="titleBox">
+                                <span></span>
+                                <span>[field:typename /]</span>
+                            </div>
+                            <div class="contentBox" style="display: none">
+                               [field:content /]
+                            </div>
+                        </li>
+                    {/dede:channel}
+                </ul>
+                <script type='text/javascript'>
+                    $('.currentCont li').hover(function(){
+                        $(this).find('.contentBox').show();
+                    },function(){
+                         $(this).find('.contentBox').hide();
+                    })
+                     $('.currentCont li').click(function(){
+                        window.location.href=$(this).attr('data-url');
+                     })
+                </script>
+            </div>
+            <div class="moduleFive">
+                <h1>
+                    <p>为什么选我们</p>
+                    <p>怎么才能发挥出真正的好效果？</p>
+                </h1>
+                <ul class="productInfo">
+                    <li>
+                        <span>01</span>
+                        <p>产品拍摄前，会先了解你的需求，根据产品特点再进行策划拍摄</p>
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <p>视频制作前，会提前策划好，根据产品特性搭配合理的素材亦或者模特</p>
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <p>视频制作前，会提前策划好，根据产品特性搭配合理的素材亦或者模特</p>
+                    </li>
+                    <li>
+                        <span>04</span>
+                        <p>简约不简单，深度挖掘产品卖点从而设计出更有购买欲的亚马逊图</p>
+                    </li>
+                </ul>
+                <script type='text/javascript'>
+                    $('.productInfo li').hover(function(){
+                        $(this).addClass('productInfoActive');
+                    },function(){
+                        $(this).removeClass('productInfoActive');
+                    })
+                </script>
+                <p class="imgTitle">只有让人满意的作品，才能让你我共同进步</p>
+                <div class="showImgBox">
+                    <div class="imgModule">
+                        <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/wechatChatOne.png" alt="">
+                    </div>
+                    <div class="imgModule">
+                        <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/wechatChatTwo.png" alt="">
+                    </div>
+                    <div class="imgModule">
+                        <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/wechatChatThree.png" alt="">
+                    </div>
+                    <div class="imgModule">
+                        <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/wechatChatFour.png" alt="">
+                    </div>
+                    <div class="imgModule">
+                        <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/wechatChatFive.png" alt="">
+                    </div>
+                    <div class="imgModule">
+                        <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/wechatChatSix.png" alt="">
+                    </div>
+                    <div class="imgModule">
+                        <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/wechatChatSeven.png" alt="">
+                    </div>
+                    <div class="imgModule">
+                        <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/wechatChatEnght.png" alt="">
+                    </div>
+                </div>
+                <p style="width: 100%;line-height: 90px;background-color: rgba(214,14,14,1);font-size: 32px;color: white;text-align: center;">一次设计，将是对你产品的一次全面提升</p>
+                <div class="teamShow">
+                    <img src="{dede:global.cfg_templets_skin/}/asset/images/aboutWe/teamShow.png" alt="">
+                </div>
+                <div class="videoShow">
+                    <p>有活力的办公环境   这里每个人都很有冲劲</p>
+                    <div class="videoBox">
+                        <video src=""></video>
+                    </div>
+                </div>
+            </div>
+        </main>
+      {dede:include filename="footer.htm"/}
+    </div>
+
+<script type="text/javascript" src="../asset/lib/jquery-1.8.3.min.js"></script>
+</body>
+</html>

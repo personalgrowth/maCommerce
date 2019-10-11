@@ -1,0 +1,1 @@
+<div class="swiper-slide">[field:image/]</div>

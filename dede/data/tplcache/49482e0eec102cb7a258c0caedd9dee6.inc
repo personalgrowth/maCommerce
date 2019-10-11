@@ -1,0 +1,3 @@
+<div class="imgModule">
+              [field:image/]            
+            </div>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/masset/css/reset.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/masset/css/style.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/asset/lib/swiper/swiper.min.css">
+    <style>
+        /*banner分页样式*/
+        .homeBanner .pageBox {
+            position: absolute;
+            left: 1.9rem;
+            bottom: -0.5rem;
+            width: 3.52rem;
+            height: 1.06666rem;
+            background-color: rgba(251, 251, 251, 1);
+            display: flex;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .homeBanner .pageBox:after {
+            content: '';
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(250, 152, 1, 1);
+        }
+
+        .homeBanner .pageBox > ul {
+            display: flex;
+            justify-content: flex-start;
+            font: 0.26666rem '微软雅黑';
+            color: rgba(102, 102, 102, 1);
+            margin-left: 22px;
+        }
+
+        .homeBanner .pageBox > ul > li.swiper-pagination-bullet {
+            width: auto;
+            height: auto;
+            margin-right: 20px;
+            display: flex;
+            align-items: flex-end;
+            background: none;
+        }
+
+        .homeBanner .pageBox > ul > li.swiper-pagination-bullet:last-child {
+            margin-right: 0;
+        }
+
+        .homeBanner .pageBox > ul > li.swiper-pagination-bullet-active {
+            font-size: 0.4rem;
+            font-weight: 700;
+            color: #000000;
+        }
+        .swiper-slide img{
+            width:100%;
+            height:100%;
+        }
+        .itemModule img{
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="maMobile" style="padding-bottom: 40px">
+    <div class="homeBanner">
+        <div class="leftLogoBox">
+            <img src="{dede:global.cfg_templets_skin/}/masset/images/public/logo.png" alt="">
+            <p class="pinpai">创意设计摄影电商品牌</p>
+            <p class="yuyue">设计预约</p>
+            <p class="lianxiren">付小姐（业务总监）</p>
+            <div class="contact">
+                <div class="wechat wechatShowPerson">
+                    <img src="{dede:global.cfg_templets_skin/}/masset/images/public/wechat.png" alt="">
+                </div>
+                <div class="qq">
+                    <img src="{dede:global.cfg_templets_skin/}/masset/images/public/mobile.png" alt="">
+                </div>
+            </div>
+            <div class="wechatPerson" style="display: none">
+                <img src="{dede:global.cfg_templets_skin/}/masset/images/public/erweima.png" alt="">
+            </div>
+        </div>
+        <div class="rightBannerBox">
+            <div id="bannerSwiper" class="swiper-container">
+                <div class="swiper-wrapper">
+                    {dede:arclist  orderby=pubdate typeid=9  }
+                     <div class="swiper-slide"><img src='[field:picname/]'></div>
+                    {/dede:arclist}
+                </div>
+            </div>
+        </div>
+        <div class="pageBox">
+            <ul class="swiper-pagination">
+             {dede:arclist  orderby=pubdate typeid=6 type='image.' }
+                [field:global name=autoindex runphp='yes']
+
+                 (@me!=1)? @me="<li >@me</li>":@me="<li class='swiper-pagination-bullet-active'>@me</li>";
+
+                [/field:global]
+          
+                {/dede:arclist}
+            </ul>
+        </div>
+    </div>
+     <main class="mobileMain">
+        <p class="caseTitle">案例展示</p>
+        <div class="caseBox">
+            {dede:arclist flag='c' row='6'}
+        
+
+            
+          [field:global runphp='yes' name=autoindex]$c
+= '<div class="itemModule moduleVideo">'; if((@me % 1) == 0) @me = $c;
+else @me = '<div class="itemModule moduleImg">';[/field:global]
+                <a href="view.php?aid=[field:id/]">
+                   
+                    <img src='[field:picname /]'>
+                    <div class="introduce">[field:title /]</div>
+                </a>
+            </div>
+            {/dede:arclist}
+
+        </div>
+        <p class="moreTitle"><span></span><a href="#">更多案例 ></a></p>
+        <p class="newsTitle">新闻</p>
+        <ul class="newsModule">
+            {dede:arclist  orderby=pubdate typeid=8  descriptionlen='15'}
+            <li>
+                <a href="view.php?aid=[field:id/]">
+                    <div class="imgBox">
+                       [field:image  /]
+                    </div>
+                    <div class="textBox">
+                        <span class="time">[field:pubdate function="MyDate('Y年m月d日',@me)"/]</span>
+                        <span class="title">[field:title /]</span>
+                        <span class="content">[field:description /]</span>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclist}
+            
+        </ul>
+    </main>
+    {dede:include filename="footer_m.htm"/}
+    <!--每个里面都需引入-->
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/masset/js/flex.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/masset/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/masset/js/touch.js"></script>
+<!---->
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/asset/lib/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/masset/js/waterFull.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/masset/js/index.js"></script>
+<script>
+    $(function () {
+        //初始化轮播图
+        var bannerSwiper = new Swiper('#bannerSwiper', {
+            loop: true,
+            autoplay: 1000,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable :true,                //点击分页按钮切换
+                renderBullet: function (index, className) {
+                    return '<li class="' + className + '">' + (index + 1) + '</li>';
+                }
+            },
+        });
+
+        //鼠标滑过pagination控制swiper切换
+        for(i=0;i < bannerSwiper.pagination.bullets.length;i++){
+            bannerSwiper.pagination.bullets[i].onmouseover=function(){
+                this.click();
+            };
+        }
+
+        //如果你在swiper初始化后才决定使用clickable，可以这样设置
+        bannerSwiper.params.pagination.clickable = true ;
+        //此外还需要重新初始化pagination
+        bannerSwiper.pagination.destroy();
+        bannerSwiper.pagination.init();
+        bannerSwiper.pagination.bullets.eq(0).addClass('swiper-pagination-bullet-active');
+    })
+</script>
+</body>
+</html>

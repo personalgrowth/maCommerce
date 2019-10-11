@@ -1,0 +1,87 @@
+.maCommerce .shootProductMain{
+    position: relative;
+    margin: 0 auto;
+    width: 62.7%;
+    height: max-content;
+}
+.maCommerce .shootProductMain .mainCurrent,
+.maCommerce .shootProductMain .shootProduct{
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.maCommerce .shootProductMain .shootProduct > .productModule{
+    position: relative;
+    float:left;
+    width: 31%;
+    height: max-content;
+    margin-right: 2%;
+    margin-bottom: 35px;
+}
+.shootProductMain .shootProduct > .productModule .imgBox{
+    width: 100%;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+@media screen and (min-width: 1366px){
+    .maCommerce .shootProductMain .shootProduct > .productModule .imgBox{
+        height: 314px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .maCommerce .shootProductMain .shootProduct > .productModule .imgBox{
+        height: 223px;
+    }
+}
+.maCommerce .shootProductMain .shootProduct > .productModule .imgBox > img{
+    height: 100%;
+    width: auto;
+}
+.maCommerce .shootProductMain .shootProduct > .productModule > a > p{
+    font-size:15px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    float: left;
+    margin-top: 19px;
+}
+.maCommerce .shootProductMain .shootProduct > .productModule:nth-child(3 + 3n){
+    margin-right: 0;
+}
+.maCommerce .shootProductMain .pageModule{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.maCommerce .shootProductMain .pageModule > .prevPage,
+.maCommerce .shootProductMain .pageModule > .nextPage{
+    padding: 7px 23px;
+    background:rgba(80,80,80,1);
+    border-radius:15px;
+    font-size:16px;
+    color: white;
+    cursor: pointer;
+}
+.maCommerce .shootProductMain .pageModule > .goHome{
+    border: 1px solid #C6C6C6;
+    border-radius: 15px;
+    margin: 0 15px;
+}
+.maCommerce .shootProductMain .pageModule > .goHome a{
+    display: inline-block;
+    padding: 7px 30px;
+    color: #666666;
+    text-align: center;
+    font-size:16px;
+}
+
+
+
+
+
+
+
+
+
+

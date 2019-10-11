@@ -1,0 +1,327 @@
+.maCommerce .aboutMain{
+    position: relative;
+    margin: 0 auto;
+    width: 62.7%;
+    height: max-content;
+}
+.maCommerce .aboutMain .brand{
+    width: 100%;
+    height: 385px;
+    padding-top: 38px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F8F8;
+    margin-top: 65px;
+}
+.maCommerce .aboutMain .brand img{
+    height: 83px;
+    margin-bottom: 24px;
+}
+.maCommerce .aboutMain .brand h2{
+    font-size:17px;
+    font-family:SourceHanSansCN;
+    font-weight:700;
+    color:rgba(51,51,51,1);
+    margin-bottom: 16px;
+}
+.maCommerce .aboutMain .brand p{
+    font: 16px '微软雅黑';
+    color: #666666;
+    margin-bottom: 4px;
+}
+.maCommerce .aboutMain .brand p.last{
+    color: #333333;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333333;
+    margin-top: 7px;
+}
+.maCommerce .aboutMain .moduleTwo{
+    position:relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 87.7%;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(59,59,59,0.38);
+}
+.maCommerce .aboutMain .moduleTwo img{
+    margin-left:-60px;
+}
+.maCommerce .aboutMain .moduleThree{
+    position: relative;
+    margin: 0 auto;
+    width: 75.1%;
+    margin-top: 64px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.maCommerce .aboutMain .moduleThree > h1{
+    font-size:44px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    margin-bottom: 50px;
+}
+.maCommerce .aboutMain .moduleThree > ul{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.maCommerce .aboutMain .moduleThree > ul > li{
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid rgba(59,59,59,0.3);
+}
+.maCommerce .aboutMain .moduleThree > ul > li > a{
+    width: 100%;
+    height: 100%;
+    padding: 28px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.maCommerce .aboutMain .moduleThree > ul > li > a > div{
+    width: 26px;
+    height: 5px;
+    background-color: #C8C8C8;
+    margin-right: 10px;
+}
+.maCommerce .aboutMain .moduleThree > ul > li > a > span{
+    font-size:19px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+}
+
+.maCommerce .aboutMain .moduleFour{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.maCommerce .aboutMain .moduleFour .titleImg{
+    position:relative;
+    width: 66.9%;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 34px;
+}
+.maCommerce .aboutMain .moduleFour .titleImg img{
+    position: absolute;
+    top:0;left:0;
+    width: 100%;
+    height: 100%;
+}
+.maCommerce .aboutMain .moduleFour .titleImg h1{
+    font-size:30px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    z-index: 999;
+}
+.maCommerce .aboutMain .moduleFour .currentCont{
+    width: 100%;
+    height: 353px;
+    display: flex;
+    justify-content: flex-start;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li{
+    width: 23.5%;
+    height: 100%;
+    margin-right: 2%;
+    background:rgba(252,252,252,1);
+    box-shadow:4px 4px 7px 0px rgba(6,6,6,0.14);
+    -webkit-box-shadow: 4px 4px 7px 0px rgba(6,6,6,0.14);
+    -moz-box-shadow: 4px 4px 7px 0px rgba(6,6,6,0.14);
+    -o-box-shadow: 4px 4px 7px 0px rgba(6,6,6,0.14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li:last-child{
+    margin-right: 0;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .titleBox{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .titleBox > span:first-child{
+    width:33px;
+    height:4px;
+    background:rgba(102,102,102,1);
+    margin-bottom: 25px;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .titleBox > span:last-child{
+    font: 25px '微软雅黑';
+    font-weight:400;
+    color:rgba(102,102,102,1);
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .contentBox{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .contentBox p{
+    font: 13px '微软雅黑';
+    color: rgba(102,102,102,1);
+    text-align:center;
+    margin-bottom: 5px;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .contentBox p:last-child{
+    margin-bottom: 0px;
+}
+.aboutMain .moduleFive{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 110px;
+}
+.aboutMain .moduleFive > h1{
+    width:100%;
+    font-size:40px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    margin-bottom: 40px;
+}
+.aboutMain .moduleFive > h1 > p{
+    width: 100%;
+    text-align: left;
+}
+.aboutMain .moduleFive > h1 > p:first-child{
+    margin-bottom: 17px;
+}
+.aboutMain .moduleFive  > .productInfo{
+    width: 92.6%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.aboutMain .moduleFive  > .productInfo > li{
+    width: 100%;
+    height: 114px;
+    border-radius: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    background:rgba(227,227,227,1);
+}
+.aboutMain .moduleFive  > .productInfo > li > span{
+    font-size:54px;
+    font-family:BDZYJT;
+    font-weight:normal;
+    color:rgba(102,102,102,1);
+    margin-right: 40px;
+}
+.aboutMain .moduleFive  > .productInfo > li > p{
+    width: 75%;
+    line-height: 45px;
+    font-size: 26px;
+    color:rgba(102,102,102,1);
+}
+.aboutMain .moduleFive  > .productInfo > li.productInfoActive{
+    background:rgba(204,0,0,1);
+}
+.aboutMain .moduleFive  > .productInfo > li.productInfoActive > span{
+    color: white;
+}
+.aboutMain .moduleFive  > .productInfo > li.productInfoActive > p{
+    color: white;
+}
+.aboutMain .moduleFive  > .imgTitle{
+    margin-top: 60px;
+    margin-bottom: 33px;
+    text-align: center;
+    width: 100%;
+    font-size:24px;
+    color:rgba(102,102,102,1);
+}
+.aboutMain .moduleFive  > .showImgBox{
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.aboutMain .moduleFive  > .showImgBox > .imgModule{
+    position: relative;
+    float: left;
+    width: 24.5%;
+    margin-right: 0.5%;
+    height: max-content;
+    margin-bottom: 3px;
+}
+.aboutMain .moduleFive  > .showImgBox > .imgModule img{
+    width: 100%;
+    height: auto;
+}
+.aboutMain .moduleFive  > .showImgBox > .imgModule:last-child{
+    margin-right: 0;
+}
+.aboutMain .moduleFive > .teamShow{
+    width: 100%;
+    height: max-content;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.aboutMain .moduleFive > .teamShow img{
+    width: 90%;
+    height: auto;
+}
+.aboutMain .moduleFive > .videoShow{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.aboutMain .moduleFive > .videoShow p{
+    font-size:22px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    margin-bottom: 38px;
+}
+@media screen and (min-width: 1366px){
+    .aboutMain .moduleFive > .videoShow .videoBox{
+        height: 646px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .aboutMain .moduleFive > .videoShow .videoBox{
+        height: 460px;
+    }
+}
+.aboutMain .moduleFive > .videoShow .videoBox{
+    width: 100%;
+}
+.aboutMain .moduleFive > .videoShow .videoBox video{
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+}
+
+
+
+

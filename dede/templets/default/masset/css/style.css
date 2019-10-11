@@ -1,0 +1,668 @@
+.maMobile {
+    width: 100%;
+    height: max-content;
+}
+
+.maMobile .homeBanner {
+    position: relative;
+    width: 100%;
+    height: 5.173333rem;
+    margin-bottom: 1.226666rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.homeBanner .leftLogoBox {
+    position: relative;
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.586666rem 0 0 0.4rem;
+}
+
+.homeBanner .leftLogoBox > img {
+    width: 1.36rem;
+    margin-bottom: 0.426666rem;
+}
+
+.homeBanner .leftLogoBox .pinpai {
+    font-size: 0.266666rem;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    margin-bottom: 0.6933333rem;
+}
+
+.homeBanner .leftLogoBox .yuyue {
+    font-size: 0.45555rem;
+    font-family: SourceHanSansCN;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 0.255555rem;
+}
+
+.homeBanner .leftLogoBox .lianxiren {
+    font-size: 0.333333rem;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 0.4266666rem;
+}
+
+.homeBanner .leftLogoBox .contact {
+    width: 120px;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.homeBanner .leftLogoBox .contact > .wechat {
+    margin-right: 0.8rem;
+}
+
+.homeBanner .leftLogoBox .contact > .wechat {
+    width: 25px;
+}
+
+.homeBanner .leftLogoBox .contact > .qq {
+    width: 15px;
+}
+
+.homeBanner .leftLogoBox .contact > .wechat img,
+.homeBanner .leftLogoBox .contact > .qq img {
+    width: 100%;
+    height: auto;
+}
+
+.homeBanner .leftLogoBox .wechatPerson{
+    position: absolute;
+    width: 2.6666rem;
+    height: max-content;
+    top: 4.8rem;
+    z-index: 999;
+}
+
+.homeBanner .leftLogoBox .wechatPerson > img{
+    width:100%;
+    height:auto;
+}
+
+.mobileHeader .wechatPerson {
+    position: absolute;
+    width: 2.6666rem;
+    height: max-content;
+    top: 1.3rem;
+    right: 2.5rem;
+    z-index: 999;
+}
+
+.mobileHeader .wechatPerson > img {
+    width: 100%;
+    height: auto;
+}
+
+.homeBanner .rightBannerBox {
+    width: 62%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*顶部导航*/
+.mobileHeader {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    background-color: rgba(220, 47, 47, 1);
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileHeader .logo {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mobileHeader .logo > img {
+    height: 70%;
+    width: auto;
+    margin-right: 8px;
+}
+
+.mobileHeader .logo > span {
+    font-size: 18px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.mobileHeader .contact {
+    width: 3.73333rem;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileHeader .contact > .qq {
+    width: 0.666667rem;
+}
+
+.mobileHeader .contact > .wechat {
+    width: 0.4rem;
+}
+
+.mobileHeader .contact > .wechat img,
+.mobileHeader .contact > .qq img {
+    width: 100%;
+    height: auto;
+}
+
+.mobileHeader .contact > span.cut {
+    width: 1px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 .266667rem;
+}
+
+/*logo菜单展示*/
+.mobileMenu {
+    position: relative;
+    width: 100%;
+    height: 2.24rem;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 1);;
+}
+
+.mobileMenu .logoModule {
+    width: max-content;
+    height: 100%;
+}
+
+.mobileMenu .logoModule > a {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileMenu .logoModule:last-child {
+    margin-right: 0px;
+}
+
+.mobileMenu .logoModule img {
+    height: .586666rem;
+    width: auto;
+    margin-bottom: 0.4rem;
+}
+
+.mobileMenu .logoModule img.imgActive {
+    display: none;
+}
+
+.mobileMenu .logoModule span.title {
+    font-size: 12px;
+    font-family: SourceHanSansCN;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+}
+
+.mobileMenu .logoModuleActive span.title {
+    color: #CD1C1C;
+}
+
+/*标签切换样式*/
+.maMobile .labelCurrent {
+    width: 100%;
+    height: max-content;
+    margin-top: .53333rem;
+    margin-bottom: .693333rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maMobile .labelCurrent > ul {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: max-content;
+    margin-bottom: .453333rem;
+}
+
+.maMobile .labelCurrent > ul > li {
+    padding: 6px 15px;
+    border: 1px solid #000000;
+    font-size: 14px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
+
+.maMobile .labelCurrent > ul > li.mainLabelCurrentActive {
+    background-color: #000000;
+    color: white;
+}
+
+.maMobile .labelCurrent > p {
+    font-size: 14px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
+
+.mobileMain {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0.4rem;
+    margin-bottom: 0.533333rem;
+}
+
+.mobileMain > .caseTitle {
+    font-size: 19px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(120, 120, 120, 1);
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.mobileMain > .caseBox {
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+
+.mobileMain > .caseBox > .moduleImg,
+.mobileMain > .caseBox > .moduleVideo {
+    position: absolute;
+    float: left;
+    width: 47%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #eeeeee;
+    /*margin-bottom: 0.48rem;*/
+}
+
+.mobileMain > .caseBox > .moduleImg > a,
+.mobileMain > .caseBox > .moduleVideo > a {
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+}
+
+/*.mobileMain > .caseBox > .moduleImg:nth-of-type(odd),*/
+/*.mobileMain > .caseBox > .moduleVideo:nth-of-type(odd) {*/
+/*    margin-right: 6%;*/
+/*}*/
+
+.mobileMain > .caseBox > .moduleImg {
+    height: max-content;
+}
+
+.mobileMain > .caseBox > .moduleVideo {
+    height: 4.266666rem;
+}
+
+.mobileMain > .caseBox > .moduleVideo video {
+    height: 100%;
+}
+
+.mobileMain > .caseBox > .moduleImg .introduce,
+.mobileMain > .caseBox > .moduleVideo .introduce {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 4px 6px;
+    background-color: white;
+    color: rgba(140, 140, 140, 1);
+}
+
+.mobileMain > .caseBox > .moduleImg .introduce:after,
+.mobileMain > .caseBox > .moduleVideo .introduce:after {
+    content: '';
+    width: 7px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(59, 59, 59, 1);
+}
+
+.mobileMain > .caseBox > .moduleVideo .player {
+    position: absolute;
+}
+
+.mobileMain > .caseBox > .moduleVideo .player > img {
+    width: 1.04rem;
+    height: 1.04rem;;
+}
+
+.mobileMain > .moreTitle {
+    position: relative;
+    margin: 1.06666rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
+
+.mobileMain > .moreTitle:before {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #000000;
+}
+
+.mobileMain > .moreTitle > span {
+    width: 3px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.mobileMain > .newsTitle {
+    text-align: left;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    display: flex;
+    align-items: center;
+}
+
+.mobileMain > .newsTitle:before {
+    content: '';
+    width: 12px;
+    height: 2px;
+    background: rgba(0, 0, 0, 1);
+    margin-right: 5px;
+}
+
+.mobileMain > .newsModule {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileMain > .newsModule > li {
+    width: 100%;
+    height: 2.346666rem;
+    margin-bottom: 1.226666rem;
+}
+
+.mobileMain > .newsModule > li:last-child {
+    margin-bottom: 0;
+}
+
+.mobileMain > .newsModule > li > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileMain > .newsModule > li .imgBox {
+    width: 3.52rem;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mobileMain > .newsModule > li .imgBox > img {
+    width: auto;
+    height: 100%;
+}
+
+.mobileMain > .newsModule > li .textBox {
+    width: 5.373333rem;
+    height: 100%;
+    padding: 0.2133333rem 0.24rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.mobileMain > .newsModule > li .textBox > .time {
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: 400;
+    color: rgba(140, 140, 140, 1);
+    margin-bottom: 0.286666rem;
+}
+
+.mobileMain > .newsModule > li .textBox > .title {
+    font-size: 16px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 0.24rem;
+}
+
+.mobileMain > .newsModule > li .textBox > .content {
+    display: inline-block;
+    width: 100%;
+    white-space: normal;
+    font-size: 12px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(140, 140, 140, 1);
+    line-height: 13px;
+}
+
+/*公共主题排版(上下)*/
+.modulePublic {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modulePublic .smallModule {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    background-color: #eeeeee;
+}
+
+.modulePublic .smallModule:last-child {
+    margin-bottom: 0;
+}
+
+.modulePublic .smallModule a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+
+.modulePublic .smallModule img,
+.modulePublic .smallModule video {
+    position: relative;
+    width: 100%;
+    height: 7.6rem;
+}
+
+.modulePublic .smallModule .player {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modulePublic .smallModule .player > img {
+    width: 1.04rem;
+    height: 1.04rem;
+}
+
+.mobileFooter {
+    position: relative;
+    width: 100%;
+    height: 4.733333rem;
+    padding: 0.93333rem 0.8rem;
+    background-color: rgba(232, 232, 232, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.mobileFooter .contact {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.mobileFooter .contact .wechat {
+    width: .66666rem;
+    margin-right: 1rem;
+}
+
+.mobileFooter .contact .qq {
+    width: .53333rem;
+    margin-right: 1rem;
+}
+
+.mobileFooter .contact .wechat img,
+.mobileFooter .contact .qq img {
+    width: 100%;
+    height: auto;
+}
+
+.mobileFooter .qiyeTitle {
+    font-size: 16px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: .213333rem;
+}
+
+.mobileFooter .location {
+    font-size: 13px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+}
+
+.mobileFooter .pageTop{
+    position: absolute;
+    top:.66666rem;right: .66666rem;
+    width:1.306666rem;
+    height:1.306666rem;
+    background:rgba(157,157,157,1);
+    border-radius:3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileFooter .pageTop > img{
+    width: .506666rem;
+    height: auto;
+}
+
+.mobileFooter .footerWechatBox {
+    position: absolute;
+    width: 2.6666rem;
+    height: max-content;
+    bottom: 4rem;
+    left: 2.95rem;
+    z-index: 999;
+}
+
+.mobileFooter .footerWechatBox > img {
+    width: 100%;
+    height: auto;
+}
+
+.footerMenu {
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 89, 89, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+}
+
+.footerMenu > a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.maMobile .service{
+    position:fixed;
+    right: 5px;
+    bottom: 6rem;
+    width:1.2rem;
+    height: max-content;
+}
+
+.maMobile .service > img{
+    width:100%;
+    height:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

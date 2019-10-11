@@ -1,0 +1,484 @@
+.maCommerce{
+    width: 100%;
+    height: max-content;
+     position: relative;
+}
+
+/*首页顶部菜单*/
+.maCommerce .menuHeader{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+.maCommerce .menuHeader .menuBox{
+    width: 584px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 35px;
+}
+.maCommerce .menuHeader .menuBox li{
+    font: 15px '微软雅黑';
+    color: #333333;
+    cursor: pointer;
+}
+.maCommerce .menuHeader .contact,
+.maCommerce .pageHeader .contact{
+    width: 80px;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.maCommerce .menuHeader .contact > .wechat,
+.maCommerce .menuHeader .contact > .qq,
+
+.maCommerce .pageHeader .contact > .wechat,
+.maCommerce .pageHeader .contact > .qq{
+    width: 20px;
+}
+.maCommerce .pageHeader .contact > .img,.maCommerce .menuHeader .contact > .img{
+    position: fixed;
+    z-index: 9999;
+    top: 50px;
+    display:none;
+}
+.maCommerce .menuHeader .contact > .wechat img,
+.maCommerce .menuHeader .contact > .qq img,
+.maCommerce .pageHeader .contact > .wechat img,
+.maCommerce .pageHeader .contact > .qq img{
+    width: 100%;
+    height: auto;
+}
+.maCommerce .menuHeader .contact > span.cut,
+.maCommerce .pageHeader .contact > span.cut{
+    width:1px;
+    height:16px;
+    background:rgba(40,41,45,0.32);
+}
+
+/*其他页面顶部菜单*/
+.maCommerce .pageHeader{
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #C7C8C9;
+}
+.maCommerce .pageHeader .logo{
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    height: 34px;
+    margin-right: 60px;
+}
+.maCommerce .pageHeader .logo img{
+    height: 34px;
+    width: auto;
+    margin-right: 7px;
+}
+.maCommerce .pageHeader .logo span{
+    font: 21px '微软雅黑';
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height: 34px;
+}
+.maCommerce .pageHeader .public{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 45px;
+}
+.maCommerce .pageHeader .public .bigTitle{
+    font: 20px '微软雅黑';
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    margin-bottom: 8px;
+}
+.maCommerce .pageHeader .public .smallTitle{
+    font-size:8px;
+    font-family:Myriad Variable Concept;
+    font-weight:400;
+    color:rgba(51,51,51,0.43);
+}
+
+/*logo菜单展示*/
+.maCommerce .logoHeader{
+    position: relative;
+    width: 100%;
+    height: 154px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #FAFAFA;
+}
+.maCommerce .logoHeader .logoModule{
+    width: max-content;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 70px;
+    cursor: pointer;
+}
+.maCommerce .logoHeader .logoModule:last-child{
+    margin-right: 0px;
+}
+.maCommerce .logoHeader .logoModule > img{
+    height: 30px;
+    width: auto;
+}
+.maCommerce .logoHeader .logoModule > img.bigImg{
+    height: 45px;
+    width: auto;
+    margin-top: -10px;
+}
+.maCommerce .logoHeader .logoModule span.title{
+    font-size:16px;
+    font-family:SourceHanSansCN;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+.maCommerce .logoHeader .logoModule span.bigTitle{
+    margin-top: -6px;
+}
+.maCommerce .logoHeader .logoModule span.english{
+    font-size:11px;
+    font-family:Arial;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+
+/*主体布局*/
+.maCommerce .main{
+    width: 100%;
+    height: max-content;
+}
+.maCommerce .main > .bannerBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+@media screen and (min-width: 1366px){
+    .maCommerce .main > .bannerBox{
+        height: 701px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .maCommerce .main > .bannerBox{
+        height: 501px;
+    }
+}
+.maCommerce .main > .bannerBox .swiper-container{
+    height: 100%;
+}
+.maCommerce .main > .bannerBox .swiper-slide{
+    display:flex;
+    justify-content: center;
+}
+.maCommerce .main > .bannerBox .swiper-slide > img{
+    width: 100%;
+    height: 100%;
+}
+.maCommerce .main > .productModule{
+    position: relative;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 62.3%;
+    height: max-content;
+}
+.maCommerce .main > .productModule .moduleTitle{
+    position: relative;
+    width:100%;
+    height:auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.maCommerce .main > .productModule .moduleTitle .titleBackImg{
+    position: relative;
+    margin: 0 auto;
+    width: 77.8%;
+    height: auto;
+}
+.maCommerce .main > .productModule .moduleTitle .moreBlock{
+    position: absolute;
+    width: 155px;
+    top: 0px;
+    left: 50%;
+    margin-left: -77.5px;
+}
+.maCommerce .main > .productModule .moduleTitle .moreBlock img{
+    width: 100%;
+    height: auto;
+}
+.maCommerce .main > .productModule .moduleContent{
+    width: 100%;
+    height: max-content;
+}
+.maCommerce .main > .productModule .moduleContent .imgModule{
+    position: relative;
+    float: left;
+    width: 33%;
+    margin: 0 3px 3px 0;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+@media screen and (min-width: 1366px){
+    .maCommerce .main > .productModule .moduleContent .imgModule{
+        height: 349px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .maCommerce .main > .productModule .moduleContent .imgModule{
+        height: 247px;
+    }
+}
+
+
+.maCommerce .main > .productModule .moduleContent .imgModule img{
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+}
+.maCommerce .main > .productModule .moduleContent .imgModule video{
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+.maCommerce .main > .productModule .moduleContent .imgModule:nth-child(3n+3){
+    margin-right: 0px;
+}
+
+.maCommerce .main > .productModule .pageTop{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.zz {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    filter: alpha(opacity=50);
+    background: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.zz.cur{
+    display:block;
+}
+.vidAlert {
+    display: none; 
+    position: absolute;
+    z-index: 1001;
+    top: 50%;
+    margin-top: -290px;
+    left: 50%;
+    margin-left: -480px;
+    width: 960px;
+    height: 580px;
+    background-color: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 100%;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    cursor: pointer;
+}
+.vidAlert.cur {
+    display: block;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.maCommerce .main > .productModule .moduleContent .imgModule img.videoed { width:50px; height:50px; position: absolute; left:45%; top:45%; z-index:99; border-radius:100%; }
+margin-bottom:30px; }
+.videolist:hover{ cursor: pointer; }
+.videos{ display:none; border: 1px solid #080808; position:fixed; left:50%; top:50%; margin-left:-320px; margin-top:-210px; z-index:100; width:640px; height:360px; }
+.vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
+/*标签切换样式*/
+.maCommerce main .labelCurrent{
+    width: 100%;
+    height: max-content;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.maCommerce main .labelCurrent > ul{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: max-content;
+    margin-bottom: 20px;
+}
+.maCommerce main .labelCurrent > ul > li{
+    padding: 8px 18px;
+    border: 1px solid #000000;
+    font-size:17px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+.maCommerce main .labelCurrent > ul > li.mainLabelCurrentActive{
+    background-color: #000000;
+    color: white;
+}
+.maCommerce main .labelCurrent > p{
+    font-size:17px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+
+/*公共主题排版(上下)*/
+.maCommerce main > .modulePublic{
+    position: relative;
+    margin: 0 auto;
+    width: 62.7%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*底部轮播效果*/
+.maCommerce main > .swiperModule{
+    position: relative;
+    margin: 0 auto;
+    width: 73.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    overflow: inherit;
+}
+.maCommerce main > .swiperModule .swiper-container{
+    width: 85.4%!important;
+}
+.maCommerce main > .swiperModule .smallModule{
+    position: relative;
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+}
+.maCommerce main > .swiperModule .smallModule a .imgBox{
+    width: 100%;
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.maCommerce main > .swiperModule .smallModule a .imgBox img{
+    width:100%;
+    height:100%;
+}
+@media screen and (min-width: 1366px){
+    .maCommerce main > .swiperModule .smallModule a .imgBox{
+        height: 212px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .maCommerce main > .swiperModule .smallModule a .imgBox{
+        height: 151px;
+    }
+}
+.maCommerce main > .swiperModule .smallModule:last-child{
+    margin-right: 0;
+}
+.maCommerce main > .swiperModule .smallModule > p{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #E8E8E8;
+    font-size:15px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    padding: 10px 0;
+}
+.maCommerce main > .swiperModule > .page-button-prev,
+.maCommerce main > .swiperModule > .page-button-next{
+    width: 40px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: rgba(205,205,205,1);
+    z-index: 88;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+.maCommerce main > .swiperModule > .page-button-prev .d4,
+.maCommerce main > .swiperModule > .page-button-next .d4{
+    float: left;
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
+}
+.maCommerce main > .swiperModule > .page-button-prev .d4{
+    transform: rotate(0deg);
+    margin-left: -3px;
+}
+.maCommerce main > .swiperModule > .page-button-next .d4{
+    margin-left: 13px;
+    transform: rotate(180deg);
+}
+    /*页脚*/
+.maCommerce .footer{
+    width: 100%;
+    height:278px;
+    background:rgba(232,232,232,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.maCommerce .footer .footerModule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 80px;
+}
+.maCommerce .footer .footerModule:last-child{
+    margin-right: 0px;
+}
+.maCommerce .footer .footerModule img{
+    width: 70px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.maCommerce .footer .footerModule img.erweima{
+    width: 117px;
+    height: 117px;
+}
+.maCommerce .footer .footerModule span{
+    font: 15px '微软雅黑';
+    color: #343434;
+    font-weight: 700;
+}

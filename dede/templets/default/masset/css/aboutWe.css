@@ -1,0 +1,392 @@
+.wechatPerson {
+    position: absolute;
+    width: 2.6666rem;
+    height: max-content;
+    top: 1.3rem;
+    right: 2.5rem;
+    z-index: 999;
+}
+
+.wechatPerson > img {
+    width: 100%;
+    height: auto;
+}
+
+.aboutMain {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: max-content;
+}
+
+.aboutMain .brand {
+    width: 100%;
+    height: max-content;
+    padding: 1.013333rem .6666rem .93333rem .6666rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F8F8;
+    margin-top: .346666rem;
+}
+
+.aboutMain .brand img {
+    height: 1.6rem;
+    margin-bottom: .506666rem;
+}
+
+.aboutMain .brand h2 {
+    font-size: 14px;
+    font-family: SourceHanSansCN;
+    font-weight: 700;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 16px;
+}
+
+.aboutMain .brand p {
+    font: 12px '微软雅黑';
+    color: #666666;
+    margin-bottom: 4px;
+}
+
+.aboutMain .brand p.last {
+    color: #333333;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333333;
+    margin-top: 7px;
+}
+
+.aboutMain .moduleTwo {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+
+.aboutMain .moduleTwo img {
+    width: 120%;
+    height: auto;
+    margin-left: -30px;
+}
+
+.aboutMain .moduleThree {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMain .moduleThree > h1 {
+    font-size: 30px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 10px;
+}
+
+.aboutMain .moduleThree > ul {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMain .moduleThree > ul > li {
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid rgba(59, 59, 59, 0.3);
+}
+
+.aboutMain .moduleThree > ul > li > a {
+    width: 100%;
+    height: 100%;
+    padding: .53333rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aboutMain .moduleThree > ul > li > a > div {
+    width: .53333rem;
+    height: 3px;
+    background-color: #C8C8C8;
+    margin-right: .26666rem;
+}
+
+.aboutMain .moduleThree > ul > li > a > span {
+    font-size: 14px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+}
+
+.aboutMain .moduleFour {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.aboutMain .moduleFour .titleImg {
+    position: relative;
+    width: 261px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.aboutMain .moduleFour .titleImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMain .moduleFour .titleImg h1 {
+    font-size: 15px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    z-index: 999;
+}
+
+.aboutMain .moduleFour .currentCont {
+    width: 100%;
+    height: 156px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.aboutMain .moduleFour .currentCont > li {
+    width: 23.5%;
+    height: 100%;
+    margin-right: 2%;
+    background: rgba(252, 252, 252, 1);
+    box-shadow: 4px 4px 7px 0px rgba(6, 6, 6, 0.14);
+    -webkit-box-shadow: 4px 4px 7px 0px rgba(6, 6, 6, 0.14);
+    -moz-box-shadow: 4px 4px 7px 0px rgba(6, 6, 6, 0.14);
+    -o-box-shadow: 4px 4px 7px 0px rgba(6, 6, 6, 0.14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMain .moduleFour .currentCont > li:last-child {
+    margin-right: 0;
+}
+
+.aboutMain .moduleFour .currentCont > li > .titleBox {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.aboutMain .moduleFour .currentCont > li > .titleBox > span:first-child {
+    width: 14px;
+    height: 2px;
+    background: rgba(102, 102, 102, 1);
+    margin-bottom: 15px;
+}
+
+.aboutMain .moduleFour .currentCont > li > .titleBox > span:last-child {
+    font: 12px '微软雅黑';
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+}
+
+.aboutMain .moduleFour .currentCont > li > .contentBox {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMain .moduleFour .currentCont > li > .contentBox p {
+    font: 12px '微软雅黑';
+    color: rgba(102, 102, 102, 1);
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.aboutMain .moduleFour .currentCont > li > .contentBox p:last-child {
+    margin-bottom: 0px;
+}
+
+.aboutMain .moduleFive {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.aboutMain .moduleFive > h1 {
+    width: 100%;
+    font-size: 22px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.aboutMain .moduleFive > h1 > p {
+    width: 100%;
+    text-align: left;
+}
+
+.aboutMain .moduleFive > h1 > p:first-child {
+    margin-bottom: 8px;
+}
+
+.aboutMain .moduleFive > .productInfo {
+    width: 9.786666rem;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMain .moduleFive > .productInfo > li {
+    width: 100%;
+    height: 1.413333rem;
+    border-radius: .706666rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    background: rgba(227, 227, 227, 1);
+}
+
+.aboutMain .moduleFive > .productInfo > li > span {
+    font-size: 25px;
+    font-family: BDZYJT;
+    font-weight: normal;
+    color: rgba(102, 102, 102, 1);
+    margin-right: 15px;
+}
+
+.aboutMain .moduleFive > .productInfo > li > p {
+    width: 75%;
+    line-height: 21px;
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1);
+}
+
+.aboutMain .moduleFive > .productInfo > li.productInfoActive {
+    background: rgba(204, 0, 0, 1);
+}
+
+.aboutMain .moduleFive > .productInfo > li.productInfoActive > span {
+    color: white;
+}
+
+.aboutMain .moduleFive > .productInfo > li.productInfoActive > p {
+    color: white;
+}
+
+.aboutMain .moduleFive > .imgTitle {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: rgba(102, 102, 102, 1);
+}
+
+.aboutMain .moduleFive > .showImgBox {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    padding: 0 4px;
+    margin-bottom: 0.3rem;
+}
+
+.aboutMain .moduleFive > .showImgBox > .imgModule {
+    position: relative;
+    float: left;
+    width: 49.5%;
+    height: max-content;
+    margin-bottom: 3px;
+}
+
+.aboutMain .moduleFive > .showImgBox > .imgModule:nth-child(odd) {
+    margin-right: 1%;
+}
+
+.aboutMain .moduleFive > .showImgBox > .imgModule img {
+    width: 100%;
+    height: auto;
+}
+
+.aboutMain .moduleFive > .showImgBox > .imgModule:last-child {
+    margin-right: 0;
+}
+
+.aboutMain .moduleFive > .teamShow {
+    width: 100%;
+    height: max-content;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMain .moduleFive > .teamShow img {
+    width: 100%;
+    height: auto;
+}
+
+.aboutMain .moduleFive > .videoShow {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.aboutMain .moduleFive > .videoShow p {
+    font-size: 14px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    margin-bottom: 19px;
+}
+
+.aboutMain .moduleFive > .videoShow .videoBox {
+    height: 225px;
+}
+
+
+.aboutMain .moduleFive > .videoShow .videoBox {
+    width: 100%;
+}
+
+.aboutMain .moduleFive > .videoShow .videoBox video {
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+}
+
+
+
+

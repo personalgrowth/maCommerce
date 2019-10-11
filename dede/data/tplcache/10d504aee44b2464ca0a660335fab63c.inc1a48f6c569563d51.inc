@@ -1,0 +1,7 @@
+<?php
+$z[0]=Array("global","\r\n\r\n				 (@me!=1)? @me=\"\":@me=\"<li class='swiper-pagination-bullet-active'></li>\";\r\n\r\n				",0,147);
+$z[0][4]=array();
+$z[0][4]['name']="autoindex";
+$z[0][4]['runphp']="yes";
+
+?>

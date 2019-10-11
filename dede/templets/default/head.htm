@@ -1,0 +1,29 @@
+  <div class="maCommerce">
+    <header class="menuHeader">
+        <ul class="menuBox">
+            <li><a href="">首页</a></li>
+            {dede:channel type='top' row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+            <li><a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a></li> {/dede:channel}
+        </ul>
+        <div class="contact">
+            <div class="wechat">
+                <img src="{dede:global.cfg_templets_skin/}/asset/images/home/qq.png" alt="">
+            </div>
+            <span class="cut"></span>
+            <div class="qq">
+                <img src="{dede:global.cfg_templets_skin/}/asset/images/home/wechat.png" alt="">
+            </div>
+             {dede:arclist aid=9 channelid='18' typeid='7' addfields='qq,phone,address,erweima'  limit='0,1'}
+            <div class='img'>
+                [field:erweima function='GetOneImgUrl(@me,0)'/]
+            </div>
+              {/dede:arclist}
+            <script type="text/javascript">
+                $('.qq').hover(function(){
+                    $('.img').show();
+                },function(){
+                    $('.img').hide();
+                })
+            </script>
+        </div>
+    </header>

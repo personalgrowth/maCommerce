@@ -1,0 +1,43 @@
+{dede:include filename="head2.htm"/}
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/asset/css/shootProduct.css">
+ <main class="shootProductMain">
+    <div class="labelCurrent">
+        <ul>
+            <li class="mainLabelCurrentActive">只走心</li>
+            <li>不走量</li>
+        </ul>
+        <p>八年专业影像设计，为千万卖家提高转化</p>
+    </div>
+    <div class="mainCurrent">
+        <div class="shootProduct">
+           {dede:list pagesize='10'}
+            <div class="productModule">
+                <a href='[field:arcurl /]'>
+                  <div class="imgBox">
+                     [field:image/]
+                  </div>
+                  <p>[field:title/]</p>
+                </a>
+            </div>
+            {/dede:list}
+        </div>
+        <div class="pageModule">
+            {dede:pagelist listitem="index,pre,next" listsize="10"/}
+            <!-- <div class="prevPage">上一页</div>
+            <div class="goHome">
+                <a href="">返回主页</a>
+            </div>
+            <div class="nextPage">下一页</div> -->
+        </div>
+    </div>
+  </main>
+<!-- /header -->
+
+  <!-- /listbox -->
+
+  <!-- /pages -->
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+</body>
+</html>

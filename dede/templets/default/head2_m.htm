@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/masset/css/reset.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/masset/css/style.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/masset/css/aboutWe.css">
+</head>
+<body>
+<div class="maMobile">
+    <div class="mobileHeader">
+        <div class="logo">
+            <img src="{dede:global.cfg_templets_skin/}/masset/images/public/logoWhite.png" alt="">
+            <span>博爱影像</span>
+        </div>
+        <div class="contact">
+            <div class="qq wechatShowPerson">
+                <img src="{dede:global.cfg_templets_skin/}/masset/images/public/wechatWhite.png" alt="">
+            </div>
+            <span class="cut"></span>
+            <div class="wechat">
+                <img src="{dede:global.cfg_templets_skin/}/masset/images/public/mobileWhite.png" alt="">
+            </div>
+            <span class="cut"></span>
+            <div class="qq">
+                <img src="{dede:global.cfg_templets_skin/}/masset/images/public/home.png" alt="">
+            </div>
+        </div>
+        <div class="wechatPerson" style="display: none">
+            <img src="{dede:global.cfg_templets_skin/}/masset/images/public/erweima.png" alt="">
+        </div>
+    </div>
+    <div class="mobileMenu">
+        {dede:channel type='top' row='10'  currentstyle='<div  class="logoModule logoModuleActive">
+          <a href="list.php?tid=~id~">
+                <img src="~global.cfg_templets_skin~/masset/images/public/~typename~Active.png" class="imgActive" alt="">
+                <span class="title">~typename~</span>
+</a>
+            </div>'} 
+            <div class="logoModule" data-url="[field:typelink /]">
+              <a href="list.php?tid=[field:id/]">
+                <img src="[field:global.cfg_templets_skin/]/masset/images/public/[field:typename /].png" class="img" alt="">
+                <img src="[field:global.cfg_templets_skin/]/masset/images/public/[field:typename /]Active.png" style='display:none;' class="imgActive" alt="">
+                <span class="title">[field:typename /]</span>
+                </a>
+            </div>
+        {/dede:channel}
+        
+    </div>
